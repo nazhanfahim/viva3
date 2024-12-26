@@ -11,6 +11,6 @@ package com.mycompany.viva3q6;
 public class Viva3q6 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
     }
 }
