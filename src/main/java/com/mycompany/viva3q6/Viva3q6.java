@@ -37,10 +37,12 @@ verthandi, idun, valkyrie, poseidon, hephaestus, athena, apollo, artemis};
  Villain odin = new Villain("Odin", "Dark", 135, 196, 14, 5);
 
  Team team = new Team(heroes);
- 
+ Game game = new Game();
 
  team.formTeam();
- System.out.println(team);
+ System.out.print(team);
+
+ game.battle(team, giemsa);
  
     }
 }
