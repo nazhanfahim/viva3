@@ -12,8 +12,9 @@ public class Villain {
     
     protected String villainName;
     private String villainElement;
-    private double villainMaxHP, villainHP, villainAttack, villainDefense, villainInitialCD, villainCurrentCD;
-
+    private double villainMaxHP, villainAttack, villainDefense, villainInitialCD; 
+    protected double villainHP, villainCurrentCD;
+    
     public Villain(String villainName, String villainElement, double villainMaxHP, double villainAttack, double villainDefense, double villainInitialCD) {
         this.villainName = villainName;
         this.villainElement = villainElement;
@@ -25,12 +26,25 @@ public class Villain {
         this.villainCurrentCD = villainInitialCD;
     }
     
-    public void villainGetDamaged(double damage){
+    public void getDamaged(double damage){
         villainHP-=damage;
         if(villainHP<0){
             villainHP=0;
         }
 
+    }
+    
+
+    public String getElement() {
+        return villainElement;
+    }
+
+    public double getAttack() {
+        return villainAttack;
+    }
+
+    public double getDefense() {
+        return villainDefense;
     }
     
     public void resetHP(){
